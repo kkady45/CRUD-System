@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body class="">
+
+        <section class="">
+            <div class="widtho m-auto p-3 shadow-lg  mb-3 mt-5">
+                <h1 class="text-uppercase">crud system</h1>
+                <label class="text-capitalize" for="productName">product name</label>
+                <input class="form-control 
+                 is-invalid " type="text" name="productName" id="productName">
+                <div class="alert alert-danger mt-1 d-none">please enter valid name</div>
+                <label class="text-capitalize" for="productCategory">product category</label>
+                <input class="form-control" type="text" name="productCategory" id="productCategory">
+                <label class="text-capitalize" for="productPrice">product price</label>
+                <input class="form-control" type="text" name="productPrice" id="productPrice">
+                <label class="text-capitalize" for="productDesc">product description</label>
+                <textarea name="productDesc" id="productDesc" class="form-control mb-4"></textarea>
+                <button onclick="create()" id="addProduct" class="btno btn text-capitalize">Add Product</button>
+                <button onclick="clearo()" id="clear" class="btno btn text-capitalize">clear</button>
+            </div>
+            <div class="p-3 widtho m-auto">
+                <input onkeyup="search()" class="form-control" type="text" name="search" id="search" placeholder="search">
+            </div>
+
+            <table class="table w-75 m-auto table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">index</th>
+                  <th scope="col">name</th>
+                  <th scope="col">category</th>
+                  <th scope="col">price</th>
+                  <th scope="col">description</th>
+                  <th scope="col">update</th>
+                  <th scope="col">delete</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+               
+                
+              </tbody>
+            </table>
+
+
+        </section>
+        
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
